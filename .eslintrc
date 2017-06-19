@@ -1,0 +1,30 @@
+{
+	"extends": "eslint:recommended",
+	"rules": {
+	"indent": ["error", "tab", {"SwitchCase": 1}],
+		"quotes": [2, "single"],
+		"linebreak-style": [2, "unix"],
+		"semi": [2, "always"],
+		"react/jsx-uses-react": 2,
+		"react/jsx-uses-vars": [2],
+		"comma-dangle": ["error", "never"],
+		"no-console": 1
+},
+	"env": {
+	"es6": true,
+		"node": true,
+		"browser": true,
+		"jest": true
+},
+	"parserOptions": {
+	"ecmaFeatures": {
+		"jsx": true,
+			"experimentalObjectRestSpread": true
+	},
+	"sourceType": "module"
+},
+	"plugins": [
+	"react"
+],
+	"globals": {}
+}
